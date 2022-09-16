@@ -1,0 +1,13 @@
+
+body{
+    width: 1280px;
+    background-color: rgb(224, 194, 57);
+    
+}
+.main{
+    height: 300px;
+    width: 1920px;
+    background-color: white;
+    margin: 0%;
+
+}
