@@ -3,24 +3,69 @@ body{
     
     background-color: white;
     margin: 0px;
-
 }
+
 .main{
     height: 200px;
     width: 100%;
     background-color: white;
     margin: 0%;
-
+    display: flex;
+    
 }
+
 .barmenu{   
     height: 100px;
     width: 100%;
     background-color: rgb(206, 155, 45);
+    display: block;
 }
+
+.logo{
+    
+    width: 30%;
+    margin-right:auto;
+    margin-left:auto;
+  
+    display: inline;
+}
+
 .logo1{
     height: 200px;
     width: 200px;
-    display:block;
+    
     margin-right:auto;
     margin-left:auto;
+}
+
+.socialmedia{
+    width: 25%;
+    height: 200px;
+    display: inline;
+    margin-top: 50px;
+}
+
+.social{
+    height: 50px;
+    width: 50px;
+}
+
+.search{
+    display: inline;
+    float: right;
+}
+
+.search1{
+    height: 50px;
+    width: 50px;
+}
+
+.scart1{
+    height: 50px;
+    width: 50px;
+}
+
+.acount{
+    height: 50px;
+    width: 50px;
 }
