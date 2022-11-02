@@ -2,12 +2,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans',sans-serif;
 }
+
 
 body{
     
     background-color: burlywood;
-    font-family: 'Open Sans',sans-serif;
     height: 100%;
     width: 100%;
     display: flex;
@@ -131,7 +132,8 @@ p{
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 0.01px;
-    color: black; 
+    color: black;
+     
 }
 
 .navicon{
@@ -150,7 +152,7 @@ p{
     cursor: pointer;
     align-items: center;
     display: flex;
-    font-family: 'Open Sans',sans-serif;
+    /* font-family: 'Open Sans',sans-serif ; */
     font-weight: 700;
 }
 
@@ -158,25 +160,27 @@ p{
     width: 100%;
     background-color: #FCC557;
     height: 60px;
+    
 }
 
 a {
     text-decoration: none;
     color: black;
+    
 }
+
     
 
 .lili{
     list-style-type: none;
     margin-left: 10%;
-    padding-left: 5%;
+    padding: 0 7% 0 7%;
     
 }
   
-#lia1 {
+#menu {
     float: left;
     text-transform: uppercase;
-    font-weight: bold;
     border-right: 1px solid #000000;
     font-size: 14px;
     font-weight: 700;
@@ -185,7 +189,9 @@ a {
     /* transition-duration: 0.5s; */
     position: relative;
     text-decoration: none;
-    font-family: inherit; 
+    /* font-family: inherit;  */
+    z-index: 100;
+    
 }
 
 ul {
@@ -195,12 +201,13 @@ ul {
     
   }
 
-#lia1:hover{
+#menu:hover{
     cursor: pointer;
     text-decoration: underline;
+    
 }
 
-ul #lia1 ul {
+ul #menu ul {
     background-color: rgb(253, 254, 255);
     visibility: hidden;
     opacity: 0;
@@ -211,18 +218,21 @@ ul #lia1 ul {
     display: none;
     min-width: 1260px;
     min-height: 500px;
+    
 }
   
-ul #lia1:hover > ul,
-ul #lia1 ul:hover {
+ul #menu:hover > ul,
+ul #menu ul:hover {
     visibility: visible;
     opacity: 1;
     display: block;
+    
   }
 
-ul #lia1 ul #lia1 {
+ul #menu ul #menu {
     clear: both;
     width: 100%;
+    
 }
 
 li a {
@@ -249,11 +259,12 @@ li a {
 .toprow{
     width: 100%;
     height: 200px;
+    
 }   
 
 .bck{
     width: 100%;
-    display: flex;
+
 }
 
 #look:hover{
@@ -262,7 +273,7 @@ li a {
 
 #linkmenu{
     color: #918f8f;;
-    font-family: inherit;
+    /* font-family: inherit; */
     font-weight: 700;
     font-size: 17px;
 }
@@ -274,6 +285,31 @@ li a {
     transform: translate(-50%, -50%);
     color: white;
     font-size: 80px;
+    text-align: center;
+    text-shadow: 0 0 10px #000;
+}
+
+#text2{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    text-shadow: 0 0 10px #000;
+    text-transform: uppercase;
+}
+.toprow-icon{
+    position: absolute;
+    top: 60%;
+    align-items: center;
+    left: 35%; 
+    height: 40px;
+}
+.toprow-icon1{
+    
+    
 }
 
 @media(max-width:1600px){
