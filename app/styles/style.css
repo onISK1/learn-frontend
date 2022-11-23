@@ -6,7 +6,7 @@
 }
 
 
-body{
+/* body{
     
     background-color: burlywood;
     height: 100%;
@@ -21,7 +21,7 @@ body{
     flex-direction: column;
     background-color: white;
     
-}
+} */
 
 p{
     font-size: 8px;
@@ -159,7 +159,7 @@ p{
 .barmenu{   
     width: 100%;
     background-color: #FCC557;
-    height: 60px;
+    height: 52px;
     
 }
 
@@ -168,7 +168,6 @@ a {
     color: black;
     
 }
-
     
 
 .lili{
@@ -185,12 +184,9 @@ a {
     font-size: 14px;
     font-weight: 700;
     margin-top: 20px;
-    display: block;
-    /* transition-duration: 0.5s; */
-    position: relative;
+    display: block;   
     text-decoration: none;
-    /* font-family: inherit;  */
-    z-index: 100;
+    padding: 0%;
     
 }
 
@@ -198,13 +194,12 @@ ul {
     list-style: none;
     margin: 0;
     padding-left: 0;
-    
-  }
+}
 
 #menu:hover{
     cursor: pointer;
     text-decoration: underline;
-    
+    transition: all 1.3s ease;
 }
 
 ul #menu ul {
@@ -212,27 +207,26 @@ ul #menu ul {
     visibility: hidden;
     opacity: 0;
     position: absolute;
-    transition: all 0.5s ease;
     margin-top: 1rem;
-    left: 0;
-    display: none;
-    min-width: 1260px;
-    min-height: 500px;
-    
+    left: 300px;
+    min-width: 1360px;
+    min-height: 450px;
+    z-index: 100;
+    border: 0px;
+    z-index: 1;
+    transition: 0.7s 0.1ms;
 }
-  
+
 ul #menu:hover > ul,
 ul #menu ul:hover {
     visibility: visible;
     opacity: 1;
-    display: block;
-    
-  }
+    display: block ;    
+}
 
 ul #menu ul #menu {
     clear: both;
     width: 100%;
-    
 }
 
 li a {
@@ -255,16 +249,54 @@ li a {
     font-weight: 700;
     margin-top: 20px;
 }
+#sub-menu-column{
+    float: left;
+    padding: 15px;
+}
+
+#menu1{
+    padding: 10px;
+    padding-top: 35px;
+}
+#menu-left{
+    float: left;
+    width: calc(100% - 400px);
+    /* max-height: 463px; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow-x: auto;
+}
+
+#menu-small{
+    margin-left: 10%;
+    font-size: 14px;
+    padding: 2%;
+    color: #918f8f;
+    font-family: inherit;
+    font-weight: normal;
+    text-transform: none;
+}
+#right-ul{
+    float: right;
+    
+    display: flex;
+}
+#photo-menu-right{
+    flex-direction: column;
+}
+#photoright{
+    height: 120px;
+    width: 120px;
+}
 
 .toprow{
     width: 100%;
-    height: 200px;
-    
+    height: 200px;    
 }   
 
 .bck{
     width: 100%;
-
 }
 
 #look:hover{
@@ -273,9 +305,10 @@ li a {
 
 #linkmenu{
     color: #918f8f;;
-    /* font-family: inherit; */
     font-weight: 700;
     font-size: 17px;
+    margin: 3%;
+    padding: 0%;
 }
 
 #text1{
@@ -302,14 +335,23 @@ li a {
 }
 .toprow-icon{
     position: absolute;
-    top: 60%;
+    top: 55%;
+    left: 27%; 
+    height: 150px;
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    left: 35%; 
-    height: 40px;
 }
 .toprow-icon1{
-    
-    
+    margin: 26px;
+    opacity: 0.6;
+    transition: all .3s ease;
+}
+.toprow-icon1:hover{
+    cursor: pointer;
+    opacity: 1;
 }
 
 @media(max-width:1600px){
